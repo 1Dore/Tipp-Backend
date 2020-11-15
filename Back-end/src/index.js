@@ -7,12 +7,9 @@ require('./app/routs/contratos')(app);
 require('./app/routs/usuario')(app);
 require('./app/routs/colaboradores')(app);
 
-app.get('/', (req, res) => {
-    res.send(`Hello World! from port: ${app.get("port")}`, )
-});
 
 app.get('/try', (req, res) => {
-    res.send("Works!", )
+    res.send(`Hello World! from port: ${app.get("port")}`, )
 });
 
 app.listen(app.get("port"), () => 
