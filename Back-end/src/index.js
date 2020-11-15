@@ -9,7 +9,7 @@ require('./app/routs/colaboradores')(app);
 
 
 app.get('/try', (req, res) => {
-    res.send(`Hello World! from port: ${app.get("port")}`, )
+    res.json({test: `Hello World! from port: ${app.get("port")}`})
 });
 
 app.listen(app.get("port"), () => 
