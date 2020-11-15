@@ -11,6 +11,9 @@ app.get('/', (req, res) => {
     res.send(`Hello World! from port: ${app.get("port")}`, )
 });
 
+app.get('/try', (req, res) => {
+    res.send("Works!", )
+});
 
 app.listen(app.get("port"), () => 
     console.log(`El servidor esta corriendo en el puerto ${app.get("port")}`)
